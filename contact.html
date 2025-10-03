@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre nosotros</title>
+  <title>Contacto</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
     nav { background: #333; padding: 10px; }
     nav a { color: white; margin: 0 10px; text-decoration: none; }
     nav a:hover { text-decoration: underline; }
     .container { padding: 20px; }
+    form { display: flex; flex-direction: column; width: 300px; }
+    input, textarea { margin-bottom: 10px; padding: 8px; }
   </style>
 </head>
 <body>
@@ -20,8 +22,13 @@
     <a href="contact.html">Contacto</a>
   </nav>
   <div class="container">
-    <h1>Sobre nosotros</h1>
-    <p>Esta es la página donde hablamos de nuestra historia y equipo.</p>
+    <h1>Contacto</h1>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Escribe tu mensaje" rows="5"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </div>
 </body>
 </html>
